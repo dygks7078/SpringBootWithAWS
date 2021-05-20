@@ -25,16 +25,14 @@ apply plugin: 'io.spring.dependency-management' //스프링 부트의 의존성�
 
 group 'com.yogo.book'
 version '1.0-SNAPSHOT'
+sourceCompatibility = 1.8
 
 repositories {
     mavenCentral()
 }
 
 dependencies {
+    compile('org.projectlombok:lombok')
     compile('org.springframework.boot:spring-boot-starter-web')         // 와
     testCompile('org.springframework.boot:spring-boot-starter-test')    // 를 받도록 선언
-}
-
-test {
-    useJUnitPlatform()
 }
