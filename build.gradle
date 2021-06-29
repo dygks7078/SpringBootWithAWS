@@ -41,6 +41,8 @@ dependencies {
     compile('org.springframework.boot:spring-boot-starter-web')         // 와
     testCompile('org.springframework.boot:spring-boot-starter-test')    // 를 받도록 선언
 
+    //P131 추가
+    compile('org.springframework.boot:spring-boot-starter-mustache')
 }
 
 // (1)  spring-boot-starter-data-jpa
